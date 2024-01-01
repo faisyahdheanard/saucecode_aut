@@ -1,0 +1,3774 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11551146750,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigate to the website",
+            "match": {
+              "location": "loginStep.navigateToTheWebsite()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Successfully logged in using valid username and password",
+        "description": "",
+        "id": "login;successfully-logged-in-using-valid-username-and-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3404994417,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Input Username and Password fields with valid data",
+            "match": {
+              "location": "loginStep.inputWithValidData()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1768323417,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click Login button",
+            "match": {
+              "location": "loginStep.clickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1069681208,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User will be directed to the Main page",
+            "match": {
+              "location": "mainStep.directedToTheHomePage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LOG"
+          },
+          {
+            "name": "@LOG01"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7234177083,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigate to the website",
+            "match": {
+              "location": "loginStep.navigateToTheWebsite()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "Ensure the error message is displayed using various invalid data",
+        "description": "",
+        "id": "login;ensure-the-error-message-is-displayed-using-various-invalid-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3591301125,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Input Username and Password fields with \"empty username\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"empty username\"",
+                  "offset": 40
+                }
+              ],
+              "location": "loginStep.inputWithInvalidData(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 920452000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Click Login button",
+            "match": {
+              "location": "loginStep.clickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 735303000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "There is an alert message displayed on the \"Login\" page, said \"Epic sadface: Username is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"Epic sadface: Username is required\"",
+                  "offset": 62
+                }
+              ],
+              "location": "loginStep.messagePopUp(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LOG"
+          },
+          {
+            "name": "@LOG02"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6618114542,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigate to the website",
+            "match": {
+              "location": "loginStep.navigateToTheWebsite()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "Ensure the error message is displayed using various invalid data",
+        "description": "",
+        "id": "login;ensure-the-error-message-is-displayed-using-various-invalid-data;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4051742625,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Input Username and Password fields with \"empty password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"empty password\"",
+                  "offset": 40
+                }
+              ],
+              "location": "loginStep.inputWithInvalidData(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997403084,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Click Login button",
+            "match": {
+              "location": "loginStep.clickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 733073250,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "There is an alert message displayed on the \"Login\" page, said \"Epic sadface: Password is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"Epic sadface: Password is required\"",
+                  "offset": 62
+                }
+              ],
+              "location": "loginStep.messagePopUp(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LOG"
+          },
+          {
+            "name": "@LOG02"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6767498958,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigate to the website",
+            "match": {
+              "location": "loginStep.navigateToTheWebsite()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "Ensure the error message is displayed using various invalid data",
+        "description": "",
+        "id": "login;ensure-the-error-message-is-displayed-using-various-invalid-data;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1718266750,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Input Username and Password fields with \"empty data\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"empty data\"",
+                  "offset": 40
+                }
+              ],
+              "location": "loginStep.inputWithInvalidData(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1145499625,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Click Login button",
+            "match": {
+              "location": "loginStep.clickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "com.kms.katalon.core.exception.StepFailedException: Verify element text of test object \u0027Object Repository/01. LOG-Login/LOG_alert\u0027 FAILED.\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$4.call(Unknown Source)\n\tat pages.loginPage.alertMessage(loginPage.groovy:73)\n\tat pages.loginPage$alertMessage$3.call(Unknown Source)\n\tat stepdefs.loginStep.messagePopUp(loginStep.groovy:52)\n\tat ✽.There is an alert message displayed on the \"Login\" page, said \"Epic sadface: Username and Password is required\"(Include/features/01. Login.feature:24)\nCaused by: com.kms.katalon.core.exception.StepFailedException: Actual text \u0027Epic sadface: Username is required\u0027 and expected text \u0027Epic sadface: Username and Password is required\u0027 of test object \u0027Object Repository/01. LOG-Login/LOG_alert\u0027 are NOT matched.\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$4.call(Unknown Source)\n\tat pages.loginPage.alertMessage(loginPage.groovy:73)\n\tat pages.loginPage$alertMessage$3.call(Unknown Source)\n\tat stepdefs.loginStep.messagePopUp(loginStep.groovy:52)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)\n\tat cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:70)\n\tat cucumber.runner.TestStep.run(TestStep.java:52)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)\n\tat cucumber.runner.TestCase.run(TestCase.java:47)\n\tat cucumber.runner.Runner.runPickle(Runner.java:44)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:98)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:107)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:105)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runWithCucumberRunner_closure5.doCall(CucumberBuiltinKeywords.groovy:621)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runWithCucumberRunner_closure5.doCall(CucumberBuiltinKeywords.groovy)\n\tat com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)\n\tat com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)\n\tat com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runWithCucumberRunner(CucumberBuiltinKeywords.groovy:618)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runWithCucumberRunner$0.callStatic(Unknown Source)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runWithCucumberRunner(CucumberBuiltinKeywords.groovy:718)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runWithCucumberRunner.call(Unknown Source)\n\tat runnerExtent.run(runnerExtent:21)\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)\n\tat com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:144)\n\tat com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:135)\n\tat com.kms.katalon.core.main.TestCaseMain$runTestCase$0.call(Unknown Source)\n\tat TempTestCase1704111900706.run(TempTestCase1704111900706.groovy:25)\n",
+              "duration": 1248905583,
+              "status": "failed"
+            },
+            "line": 24,
+            "name": "There is an alert message displayed on the \"Login\" page, said \"Epic sadface: Username and Password is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"Epic sadface: Username and Password is required\"",
+                  "offset": 62
+                }
+              ],
+              "location": "loginStep.messagePopUp(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LOG"
+          },
+          {
+            "name": "@LOG02"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6664707292,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigate to the website",
+            "match": {
+              "location": "loginStep.navigateToTheWebsite()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "Ensure the error message is displayed using various invalid data",
+        "description": "",
+        "id": "login;ensure-the-error-message-is-displayed-using-various-invalid-data;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3854678416,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Input Username and Password fields with \"invalid data\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid data\"",
+                  "offset": 40
+                }
+              ],
+              "location": "loginStep.inputWithInvalidData(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2215976292,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Click Login button",
+            "match": {
+              "location": "loginStep.clickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60737875583,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "There is an alert message displayed on the \"Login\" page, said \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
+                  "offset": 62
+                }
+              ],
+              "location": "loginStep.messagePopUp(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LOG"
+          },
+          {
+            "name": "@LOG02"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6576610625,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigate to the website",
+            "match": {
+              "location": "loginStep.navigateToTheWebsite()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 31,
+        "name": "Ensure the error message is displayed using various invalid data",
+        "description": "",
+        "id": "login;ensure-the-error-message-is-displayed-using-various-invalid-data;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3850208834,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Input Username and Password fields with \"invalid username\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid username\"",
+                  "offset": 40
+                }
+              ],
+              "location": "loginStep.inputWithInvalidData(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1789696250,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Click Login button",
+            "match": {
+              "location": "loginStep.clickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60656929458,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "There is an alert message displayed on the \"Login\" page, said \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
+                  "offset": 62
+                }
+              ],
+              "location": "loginStep.messagePopUp(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LOG"
+          },
+          {
+            "name": "@LOG02"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8311505583,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigate to the website",
+            "match": {
+              "location": "loginStep.navigateToTheWebsite()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "Ensure the error message is displayed using various invalid data",
+        "description": "",
+        "id": "login;ensure-the-error-message-is-displayed-using-various-invalid-data;;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3889286083,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Input Username and Password fields with \"invalid password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid password\"",
+                  "offset": 40
+                }
+              ],
+              "location": "loginStep.inputWithInvalidData(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1985752792,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Click Login button",
+            "match": {
+              "location": "loginStep.clickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60613955000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "There is an alert message displayed on the \"Login\" page, said \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
+                  "offset": 62
+                }
+              ],
+              "location": "loginStep.messagePopUp(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LOG"
+          },
+          {
+            "name": "@LOG02"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6977561541,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigate to the website",
+            "match": {
+              "location": "loginStep.navigateToTheWebsite()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "name": "Ensure the error message is displayed using various invalid data",
+        "description": "",
+        "id": "login;ensure-the-error-message-is-displayed-using-various-invalid-data;;8",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2607765209,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Input Username and Password fields with \"valid with space\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"valid with space\"",
+                  "offset": 40
+                }
+              ],
+              "location": "loginStep.inputWithInvalidData(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1040367084,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Click Login button",
+            "match": {
+              "location": "loginStep.clickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43443945875,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "There is an alert message displayed on the \"Login\" page, said \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
+                  "offset": 62
+                }
+              ],
+              "location": "loginStep.messagePopUp(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LOG"
+          },
+          {
+            "name": "@LOG02"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "Include/features/01. Login.feature",
+    "tags": [
+      {
+        "name": "@LOG",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13771335083,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Validate the cart page is displayed when click Cart icon",
+        "description": "",
+        "id": "cart;validate-the-cart-page-is-displayed-when-click-cart-icon",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 662491541,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click Cart button",
+            "match": {
+              "location": "cartStep.clickCartButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 489342542,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The cart page is displayed",
+            "match": {
+              "location": "cartStep.validateCartPageDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CRT"
+          },
+          {
+            "name": "@CRT01"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13055236208,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Successfully removed the product from the cart on the cart page",
+        "description": "",
+        "id": "cart;successfully-removed-the-product-from-the-cart-on-the-cart-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 532056209,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Click Add To Cart button for \"one\" product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"one\"",
+                  "offset": 29
+                }
+              ],
+              "location": "cartStep.clickAddToCartButtonWithCounts(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1057460875,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Click Cart button",
+            "match": {
+              "location": "cartStep.clickCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 894786500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Click Remove button",
+            "match": {
+              "location": "mainStep.clickRemoveButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 478155166,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "The product successfully removed from the cart",
+            "match": {
+              "location": "cartStep.validateCartNull()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CRT"
+          },
+          {
+            "name": "@CRT02"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12047949791,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Successfully navigated back from the cart page to the main page to continue shopping",
+        "description": "",
+        "id": "cart;successfully-navigated-back-from-the-cart-page-to-the-main-page-to-continue-shopping",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 536121000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Click Cart button",
+            "match": {
+              "location": "cartStep.clickCartButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1083930208,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Click Continue Shopping button",
+            "match": {
+              "location": "cartStep.clickContinueShoppingButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 887258041,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User will be directed to the Main page",
+            "match": {
+              "location": "mainStep.directedToTheHomePage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CRT"
+          },
+          {
+            "name": "@CRT03"
+          }
+        ]
+      }
+    ],
+    "name": "Cart",
+    "description": "",
+    "id": "cart",
+    "keyword": "Feature",
+    "uri": "Include/features/02. Cart.feature",
+    "tags": [
+      {
+        "name": "@CRT",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12773705625,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Successfully added the product(s) to the cart from the main page",
+        "description": "",
+        "id": "main-page;successfully-added-the-product(s)-to-the-cart-from-the-main-page;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 529533500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click Add To Cart button for \"one\" product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"one\"",
+                  "offset": 29
+                }
+              ],
+              "location": "cartStep.clickAddToCartButtonWithCounts(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1034823250,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Click Cart button",
+            "match": {
+              "location": "cartStep.clickCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 943963584,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "The chosen product will show up in the cart \"one\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"one\"",
+                  "offset": 44
+                }
+              ],
+              "location": "cartStep.validateProducstAppear(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MPG"
+          },
+          {
+            "name": "@MPG01"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12043707042,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Successfully added the product(s) to the cart from the main page",
+        "description": "",
+        "id": "main-page;successfully-added-the-product(s)-to-the-cart-from-the-main-page;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3833327541,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click Add To Cart button for \"all\" product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"all\"",
+                  "offset": 29
+                }
+              ],
+              "location": "cartStep.clickAddToCartButtonWithCounts(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 811105000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Click Cart button",
+            "match": {
+              "location": "cartStep.clickCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 923838041,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "The chosen product will show up in the cart \"all\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"all\"",
+                  "offset": 44
+                }
+              ],
+              "location": "cartStep.validateProducstAppear(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MPG"
+          },
+          {
+            "name": "@MPG01"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13871608500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Successfully added product quantity on the main page",
+        "description": "",
+        "id": "main-page;successfully-added-product-quantity-on-the-main-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 552249250,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Click Add To Cart button for \"one\" product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"one\"",
+                  "offset": 29
+                }
+              ],
+              "location": "cartStep.clickAddToCartButtonWithCounts(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "com.kms.katalon.core.exception.StepFailedException: Unable to click on object \u0027Object Repository/03. CRT-Cart/CRT_button_Add To Cart Sauce Labs Backpack\u0027\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)\n\tat pages.cartPage.clickAddToCartWithCounts(cartPage.groovy:116)\n\tat pages.cartPage$clickAddToCartWithCounts$1.call(Unknown Source)\n\tat stepdefs.cartStep.clickAddToCartButtonWithCounts(cartStep.groovy:91)\n\tat ✽.Click Add To Cart button for \"one\" product(Include/features/03. Main.feature:24)\nCaused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: \u0027Object Repository/03. CRT-Cart/CRT_button_Add To Cart Sauce Labs Backpack\u0027 located by \u0027[id\u003d\"add-to-cart-sauce-labs-backpack\"]\u0027 not found\n\tat com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1381)\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)\n\tat pages.cartPage.clickAddToCartWithCounts(cartPage.groovy:116)\n\tat pages.cartPage$clickAddToCartWithCounts$1.call(Unknown Source)\n\tat stepdefs.cartStep.clickAddToCartButtonWithCounts(cartStep.groovy:91)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)\n\tat cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:70)\n\tat cucumber.runner.TestStep.run(TestStep.java:52)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)\n\tat cucumber.runner.TestCase.run(TestCase.java:47)\n\tat cucumber.runner.Runner.runPickle(Runner.java:44)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:98)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:107)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:105)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runWithCucumberRunner_closure5.doCall(CucumberBuiltinKeywords.groovy:621)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runWithCucumberRunner_closure5.doCall(CucumberBuiltinKeywords.groovy)\n\tat com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)\n\tat com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)\n\tat com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runWithCucumberRunner(CucumberBuiltinKeywords.groovy:618)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runWithCucumberRunner$0.callStatic(Unknown Source)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runWithCucumberRunner(CucumberBuiltinKeywords.groovy:718)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runWithCucumberRunner.call(Unknown Source)\n\tat runnerExtent.run(runnerExtent:21)\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)\n\tat com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:144)\n\tat com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:135)\n\tat com.kms.katalon.core.main.TestCaseMain$runTestCase$0.call(Unknown Source)\n\tat TempTestCase1704111900706.run(TempTestCase1704111900706.groovy:25)\n",
+              "duration": 31599992833,
+              "status": "failed"
+            },
+            "line": 24,
+            "name": "Click Add To Cart button for \"one\" product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"one\"",
+                  "offset": 29
+                }
+              ],
+              "location": "cartStep.clickAddToCartButtonWithCounts(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "The quantity of the product will be increases",
+            "match": {
+              "location": "cartStep.validateQuantityIncreases()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MPG"
+          },
+          {
+            "name": "@MPG03"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13041502500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "Successfully removed the product from the cart on the main page",
+        "description": "",
+        "id": "main-page;successfully-removed-the-product-from-the-cart-on-the-main-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 538687542,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Click Add To Cart button for \"one\" product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"one\"",
+                  "offset": 29
+                }
+              ],
+              "location": "cartStep.clickAddToCartButtonWithCounts(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 790589791,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Click Remove button",
+            "match": {
+              "location": "mainStep.clickRemoveButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 452372792,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "The product successfully removed from the cart",
+            "match": {
+              "location": "cartStep.validateCartNull()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MPG"
+          },
+          {
+            "name": "@MPG04"
+          }
+        ]
+      }
+    ],
+    "name": "Main Page",
+    "description": "",
+    "id": "main-page",
+    "keyword": "Feature",
+    "uri": "Include/features/03. Main.feature",
+    "tags": [
+      {
+        "name": "@MPG",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11749964708,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Successfully added product to the cart from the detail page",
+        "description": "",
+        "id": "detail-product;successfully-added-product-to-the-cart-from-the-detail-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 776975167,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click \"Sauce Labs Backpack\" product name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sauce Labs Backpack\"",
+                  "offset": 6
+                }
+              ],
+              "location": "cartStep.clickProductName(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 851008250,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click Add To Cart button",
+            "match": {
+              "location": "cartStep.clickAddToCartButtonDPP()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 739190125,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click Cart button",
+            "match": {
+              "location": "cartStep.clickCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 510937875,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "\"Sauce Labs Backpack\" will show up in the cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sauce Labs Backpack\"",
+                  "offset": 0
+                }
+              ],
+              "location": "cartStep.validateProductNameOnCart(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DPP"
+          },
+          {
+            "name": "@DPP01"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13012331375,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Successfully added more than one product to the cart from the detail page",
+        "description": "",
+        "id": "detail-product;successfully-added-more-than-one-product-to-the-cart-from-the-detail-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 767864292,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Click \"Sauce Labs Backpack\" product name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sauce Labs Backpack\"",
+                  "offset": 6
+                }
+              ],
+              "location": "cartStep.clickProductName(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 933771291,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Click Add To Cart button",
+            "match": {
+              "location": "cartStep.clickAddToCartButtonDPP()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1069328459,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click Back To Products button",
+            "match": {
+              "location": "cartStep.clickBackToProductsButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 763822417,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Click \"Sauce Labs Bike Light\" product name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sauce Labs Bike Light\"",
+                  "offset": 6
+                }
+              ],
+              "location": "cartStep.clickProductName(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 675167084,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Click Add To Cart button",
+            "match": {
+              "location": "cartStep.clickAddToCartButtonDPP()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 950176750,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Click Cart button",
+            "match": {
+              "location": "cartStep.clickCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1789490166,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "\"Sauce Labs Backpack\" will show up in the cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sauce Labs Backpack\"",
+                  "offset": 0
+                }
+              ],
+              "location": "cartStep.validateProductNameOnCart(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 292787041,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "\"Sauce Labs Bike Light\" will show up in the cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sauce Labs Bike Light\"",
+                  "offset": 0
+                }
+              ],
+              "location": "cartStep.validateProductNameOnCart(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DPP"
+          },
+          {
+            "name": "@DPP02"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 170891324000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Successfully added product quantity on the detail page",
+        "description": "",
+        "id": "detail-product;successfully-added-product-quantity-on-the-detail-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9507780000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Click \"Sauce Labs Backpack\" product name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sauce Labs Backpack\"",
+                  "offset": 6
+                }
+              ],
+              "location": "cartStep.clickProductName(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18985345250,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Click Add To Cart button",
+            "match": {
+              "location": "cartStep.clickAddToCartButtonDPP()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "com.kms.katalon.core.exception.StepFailedException: Unable to click on object \u0027\u0027\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)\n\tat pages.cartPage.clickAddToCartOnDPP(cartPage.groovy:104)\n\tat pages.cartPage$clickAddToCartOnDPP$6.call(Unknown Source)\n\tat stepdefs.cartStep.clickAddToCartButtonDPP(cartStep.groovy:108)\n\tat ✽.Click Add To Cart button(Include/features/04. Detail product.feature:29)\nCaused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: \u0027\u0027 located by \u0027//*[contains(text(), \u0027Add to cart\u0027)]\u0027 not found\n\tat com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1381)\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)\n\tat pages.cartPage.clickAddToCartOnDPP(cartPage.groovy:104)\n\tat pages.cartPage$clickAddToCartOnDPP$6.call(Unknown Source)\n\tat stepdefs.cartStep.clickAddToCartButtonDPP(cartStep.groovy:108)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)\n\tat cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:70)\n\tat cucumber.runner.TestStep.run(TestStep.java:52)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)\n\tat cucumber.runner.TestCase.run(TestCase.java:47)\n\tat cucumber.runner.Runner.runPickle(Runner.java:44)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:98)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:107)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:105)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runWithCucumberRunner_closure5.doCall(CucumberBuiltinKeywords.groovy:621)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runWithCucumberRunner_closure5.doCall(CucumberBuiltinKeywords.groovy)\n\tat com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)\n\tat com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)\n\tat com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runWithCucumberRunner(CucumberBuiltinKeywords.groovy:618)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runWithCucumberRunner$0.callStatic(Unknown Source)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runWithCucumberRunner(CucumberBuiltinKeywords.groovy:718)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runWithCucumberRunner.call(Unknown Source)\n\tat runnerExtent.run(runnerExtent:21)\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)\n\tat com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:144)\n\tat com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:135)\n\tat com.kms.katalon.core.main.TestCaseMain$runTestCase$0.call(Unknown Source)\n\tat TempTestCase1704111900706.run(TempTestCase1704111900706.groovy:25)\n",
+              "duration": 60451660791,
+              "status": "failed"
+            },
+            "line": 29,
+            "name": "Click Add To Cart button",
+            "match": {
+              "location": "cartStep.clickAddToCartButtonDPP()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "Click Cart button",
+            "match": {
+              "location": "cartStep.clickCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "The quantity of the product will be increases",
+            "match": {
+              "location": "cartStep.validateQuantityIncreases()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DPP"
+          },
+          {
+            "name": "@DPP03"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12254484125,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "Successfully removed the product from the cart on the detail page",
+        "description": "",
+        "id": "detail-product;successfully-removed-the-product-from-the-cart-on-the-detail-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 787434750,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Click \"Sauce Labs Backpack\" product name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sauce Labs Backpack\"",
+                  "offset": 6
+                }
+              ],
+              "location": "cartStep.clickProductName(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 772244750,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Click Add To Cart button",
+            "match": {
+              "location": "cartStep.clickAddToCartButtonDPP()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 753814584,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Click Remove button",
+            "match": {
+              "location": "mainStep.clickRemoveButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 666613166,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Click Cart button",
+            "match": {
+              "location": "cartStep.clickCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 528541625,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "The product successfully removed from the cart",
+            "match": {
+              "location": "cartStep.validateCartNull()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DPP"
+          },
+          {
+            "name": "@DPP04"
+          }
+        ]
+      }
+    ],
+    "name": "Detail Product",
+    "description": "",
+    "id": "detail-product",
+    "keyword": "Feature",
+    "uri": "Include/features/04. Detail product.feature",
+    "tags": [
+      {
+        "name": "@DPP",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11929084959,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Validate the checkout page is displayed when click Checkout button",
+        "description": "",
+        "id": "transaction;validate-the-checkout-page-is-displayed-when-click-checkout-button",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 570428500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click Add To Cart button for \"one\" product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"one\"",
+                  "offset": 29
+                }
+              ],
+              "location": "cartStep.clickAddToCartButtonWithCounts(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1080259625,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click Cart button",
+            "match": {
+              "location": "cartStep.clickCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 911775042,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click Checkout button",
+            "match": {
+              "location": "transactionStep.clickCheckoutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 867145083,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The Checkout page will be displayed",
+            "match": {
+              "location": "transactionStep.validateCheckoutPageDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TRS"
+          },
+          {
+            "name": "@TRS01"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13275874291,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Successfully created transaction with valid data",
+        "description": "",
+        "id": "transaction;successfully-created-transaction-with-valid-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 536251125,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Click Add To Cart button for \"one\" product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"one\"",
+                  "offset": 29
+                }
+              ],
+              "location": "cartStep.clickAddToCartButtonWithCounts(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1020637833,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Click Cart button",
+            "match": {
+              "location": "cartStep.clickCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1023989250,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click Checkout button",
+            "match": {
+              "location": "transactionStep.clickCheckoutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5099309667,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Input First Name, Last Name, Postal Code fields with valid data",
+            "match": {
+              "location": "transactionStep.transactionValidData()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 684254083,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Click Continue button",
+            "match": {
+              "location": "transactionStep.clickContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 551583750,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "The Checkout overview page is displayed",
+            "match": {
+              "location": "transactionStep.checkoutOverviewPageDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 433656833,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Click Finish button",
+            "match": {
+              "location": "transactionStep.clickFinishButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 934943375,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "The transaction is successful and there is a message said \"Thank you for your order!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Thank you for your order!\"",
+                  "offset": 58
+                }
+              ],
+              "location": "transactionStep.validatePaymentSuccessful(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TRS"
+          },
+          {
+            "name": "@TRS02"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13379388000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Ensure the error message is displayed when attempting to checkout with an empty cart",
+        "description": "",
+        "id": "transaction;ensure-the-error-message-is-displayed-when-attempting-to-checkout-with-an-empty-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 654846292,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Click Cart button",
+            "match": {
+              "location": "cartStep.clickCartButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 973024042,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Click Checkout button",
+            "match": {
+              "location": "transactionStep.clickCheckoutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "com.kms.katalon.core.exception.StepFailedException: Unable to verify object \u0027Object Repository/03. CRT-Cart/CRT_button_Alert\u0027 is present\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1464)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$3.call(Unknown Source)\n\tat pages.loginPage.alertMessage(loginPage.groovy:78)\n\tat pages.loginPage$alertMessage$3.call(Unknown Source)\n\tat stepdefs.loginStep.messagePopUp(loginStep.groovy:52)\n\tat ✽.There is an alert message displayed on the \"Cart\" page, said \"Error: Unable to proceed to checkout. Your shopping cart is empty. Please add items to your cart before continuing\"(Include/features/05. Transaction.feature:29)\nCaused by: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: \u0027Object Repository/03. CRT-Cart/CRT_button_Alert\u0027 located by \u0027[class\u003d\"error-message-container error\"]\u0027 not found\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1464)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$3.call(Unknown Source)\n\tat pages.loginPage.alertMessage(loginPage.groovy:78)\n\tat pages.loginPage$alertMessage$3.call(Unknown Source)\n\tat stepdefs.loginStep.messagePopUp(loginStep.groovy:52)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)\n\tat cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:70)\n\tat cucumber.runner.TestStep.run(TestStep.java:52)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)\n\tat cucumber.runner.TestCase.run(TestCase.java:47)\n\tat cucumber.runner.Runner.runPickle(Runner.java:44)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:98)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:107)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:105)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runWithCucumberRunner_closure5.doCall(CucumberBuiltinKeywords.groovy:621)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runWithCucumberRunner_closure5.doCall(CucumberBuiltinKeywords.groovy)\n\tat com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)\n\tat com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)\n\tat com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runWithCucumberRunner(CucumberBuiltinKeywords.groovy:618)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runWithCucumberRunner$0.callStatic(Unknown Source)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runWithCucumberRunner(CucumberBuiltinKeywords.groovy:718)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runWithCucumberRunner.call(Unknown Source)\n\tat runnerExtent.run(runnerExtent:21)\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)\n\tat com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:144)\n\tat com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:135)\n\tat com.kms.katalon.core.main.TestCaseMain$runTestCase$0.call(Unknown Source)\n\tat TempTestCase1704111900706.run(TempTestCase1704111900706.groovy:25)\n",
+              "duration": 11626536375,
+              "status": "failed"
+            },
+            "line": 29,
+            "name": "There is an alert message displayed on the \"Cart\" page, said \"Error: Unable to proceed to checkout. Your shopping cart is empty. Please add items to your cart before continuing\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cart\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"Error: Unable to proceed to checkout. Your shopping cart is empty. Please add items to your cart before continuing\"",
+                  "offset": 61
+                }
+              ],
+              "location": "loginStep.messagePopUp(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TRS"
+          },
+          {
+            "name": "@TRS03"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12592317000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 45,
+        "name": "Ensure the error message is displayed when input with various data field",
+        "description": "",
+        "id": "transaction;ensure-the-error-message-is-displayed-when-input-with-various-data-field;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 522836584,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Click Add To Cart button for \"one\" product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"one\"",
+                  "offset": 29
+                }
+              ],
+              "location": "cartStep.clickAddToCartButtonWithCounts(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1089904875,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Click Cart button",
+            "match": {
+              "location": "cartStep.clickCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1238094375,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Click Checkout button",
+            "match": {
+              "location": "transactionStep.clickCheckoutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3476956375,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Input First name, Last name, and Postal code with \"blank data\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"blank data\"",
+                  "offset": 50
+                }
+              ],
+              "location": "transactionStep.transactionInvalidData(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 835671000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Click Continue button",
+            "match": {
+              "location": "transactionStep.clickContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "com.kms.katalon.core.exception.StepFailedException: Verify element text of test object \u0027Object Repository/05. TRS-Transaction/TRS_text_alert Transaction\u0027 FAILED.\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$4.call(Unknown Source)\n\tat pages.loginPage.alertMessage(loginPage.groovy:76)\n\tat pages.loginPage$alertMessage$3.call(Unknown Source)\n\tat stepdefs.loginStep.messagePopUp(loginStep.groovy:52)\n\tat ✽.There is an alert message displayed on the \"Transaction\" page, said \"Error: First Name, Last Name, and Zip/Postal Code are required\"(Include/features/05. Transaction.feature:42)\nCaused by: com.kms.katalon.core.exception.StepFailedException: Actual text \u0027Error: First Name is required\u0027 and expected text \u0027Error: First Name, Last Name, and Zip/Postal Code are required\u0027 of test object \u0027Object Repository/05. TRS-Transaction/TRS_text_alert Transaction\u0027 are NOT matched.\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$4.call(Unknown Source)\n\tat pages.loginPage.alertMessage(loginPage.groovy:76)\n\tat pages.loginPage$alertMessage$3.call(Unknown Source)\n\tat stepdefs.loginStep.messagePopUp(loginStep.groovy:52)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)\n\tat cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:70)\n\tat cucumber.runner.TestStep.run(TestStep.java:52)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)\n\tat cucumber.runner.TestCase.run(TestCase.java:47)\n\tat cucumber.runner.Runner.runPickle(Runner.java:44)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:98)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:107)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:105)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runWithCucumberRunner_closure5.doCall(CucumberBuiltinKeywords.groovy:621)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runWithCucumberRunner_closure5.doCall(CucumberBuiltinKeywords.groovy)\n\tat com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)\n\tat com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)\n\tat com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runWithCucumberRunner(CucumberBuiltinKeywords.groovy:618)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runWithCucumberRunner$0.callStatic(Unknown Source)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runWithCucumberRunner(CucumberBuiltinKeywords.groovy:718)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runWithCucumberRunner.call(Unknown Source)\n\tat runnerExtent.run(runnerExtent:21)\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)\n\tat com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:144)\n\tat com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:135)\n\tat com.kms.katalon.core.main.TestCaseMain$runTestCase$0.call(Unknown Source)\n\tat TempTestCase1704111900706.run(TempTestCase1704111900706.groovy:25)\n",
+              "duration": 1814827459,
+              "status": "failed"
+            },
+            "line": 42,
+            "name": "There is an alert message displayed on the \"Transaction\" page, said \"Error: First Name, Last Name, and Zip/Postal Code are required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Transaction\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"Error: First Name, Last Name, and Zip/Postal Code are required\"",
+                  "offset": 68
+                }
+              ],
+              "location": "loginStep.messagePopUp(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TRS"
+          },
+          {
+            "name": "@TRS04"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13059005541,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 46,
+        "name": "Ensure the error message is displayed when input with various data field",
+        "description": "",
+        "id": "transaction;ensure-the-error-message-is-displayed-when-input-with-various-data-field;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 513813625,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Click Add To Cart button for \"one\" product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"one\"",
+                  "offset": 29
+                }
+              ],
+              "location": "cartStep.clickAddToCartButtonWithCounts(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1348893042,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Click Cart button",
+            "match": {
+              "location": "cartStep.clickCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 981868583,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Click Checkout button",
+            "match": {
+              "location": "transactionStep.clickCheckoutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4484154417,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Input First name, Last name, and Postal code with \"empty first name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"empty first name\"",
+                  "offset": 50
+                }
+              ],
+              "location": "transactionStep.transactionInvalidData(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1221921125,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Click Continue button",
+            "match": {
+              "location": "transactionStep.clickContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1598016542,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "There is an alert message displayed on the \"Transaction\" page, said \"Error: First Name is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Transaction\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"Error: First Name is required\"",
+                  "offset": 68
+                }
+              ],
+              "location": "loginStep.messagePopUp(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TRS"
+          },
+          {
+            "name": "@TRS04"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13017875042,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 47,
+        "name": "Ensure the error message is displayed when input with various data field",
+        "description": "",
+        "id": "transaction;ensure-the-error-message-is-displayed-when-input-with-various-data-field;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 538059459,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Click Add To Cart button for \"one\" product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"one\"",
+                  "offset": 29
+                }
+              ],
+              "location": "cartStep.clickAddToCartButtonWithCounts(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1066420792,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Click Cart button",
+            "match": {
+              "location": "cartStep.clickCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1123635375,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Click Checkout button",
+            "match": {
+              "location": "transactionStep.clickCheckoutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4354820750,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Input First name, Last name, and Postal code with \"empty last name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"empty last name\"",
+                  "offset": 50
+                }
+              ],
+              "location": "transactionStep.transactionInvalidData(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1124954833,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Click Continue button",
+            "match": {
+              "location": "transactionStep.clickContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1498653083,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "There is an alert message displayed on the \"Transaction\" page, said \"Error: Last Name is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Transaction\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"Error: Last Name is required\"",
+                  "offset": 68
+                }
+              ],
+              "location": "loginStep.messagePopUp(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TRS"
+          },
+          {
+            "name": "@TRS04"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12190644417,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 48,
+        "name": "Ensure the error message is displayed when input with various data field",
+        "description": "",
+        "id": "transaction;ensure-the-error-message-is-displayed-when-input-with-various-data-field;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 511275333,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Click Add To Cart button for \"one\" product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"one\"",
+                  "offset": 29
+                }
+              ],
+              "location": "cartStep.clickAddToCartButtonWithCounts(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 980335166,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Click Cart button",
+            "match": {
+              "location": "cartStep.clickCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 707619041,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Click Checkout button",
+            "match": {
+              "location": "transactionStep.clickCheckoutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6044843041,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Input First name, Last name, and Postal code with \"empty postal code\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"empty postal code\"",
+                  "offset": 50
+                }
+              ],
+              "location": "transactionStep.transactionInvalidData(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 958683417,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Click Continue button",
+            "match": {
+              "location": "transactionStep.clickContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1306532125,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "There is an alert message displayed on the \"Transaction\" page, said \"Error: Postal Code is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Transaction\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"Error: Postal Code is required\"",
+                  "offset": 68
+                }
+              ],
+              "location": "loginStep.messagePopUp(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TRS"
+          },
+          {
+            "name": "@TRS04"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12349285834,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 51,
+        "name": "Successfully navigated back from the Checkout:Your Information page to the cart page",
+        "description": "",
+        "id": "transaction;successfully-navigated-back-from-the-checkout:your-information-page-to-the-cart-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 561218500,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Click Add To Cart button for \"one\" product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"one\"",
+                  "offset": 29
+                }
+              ],
+              "location": "cartStep.clickAddToCartButtonWithCounts(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1162925500,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "Click Cart button",
+            "match": {
+              "location": "cartStep.clickCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 996147584,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "Click Checkout button",
+            "match": {
+              "location": "transactionStep.clickCheckoutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 833924416,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "Click Cancel button",
+            "match": {
+              "location": "transactionStep.clickCancelButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 558402042,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "User will be directed to the Cart page",
+            "match": {
+              "location": "cartStep.directedToTheCartPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TRS"
+          },
+          {
+            "name": "@TRS08"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11724884417,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 59,
+        "name": "Successfully navigated back from the Checkout:Overview page to the main page",
+        "description": "",
+        "id": "transaction;successfully-navigated-back-from-the-checkout:overview-page-to-the-main-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 545081250,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "Click Add To Cart button for \"one\" product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"one\"",
+                  "offset": 29
+                }
+              ],
+              "location": "cartStep.clickAddToCartButtonWithCounts(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1171225916,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "Click Cart button",
+            "match": {
+              "location": "cartStep.clickCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 946133250,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "Click Checkout button",
+            "match": {
+              "location": "transactionStep.clickCheckoutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3324167667,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "Input First Name, Last Name, Postal Code fields with valid data",
+            "match": {
+              "location": "transactionStep.transactionValidData()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 840836500,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "Click Continue button",
+            "match": {
+              "location": "transactionStep.clickContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2475540500,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "Click Cancel button",
+            "match": {
+              "location": "transactionStep.clickCancelButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 938705583,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "User will be directed to the Main page",
+            "match": {
+              "location": "mainStep.directedToTheHomePage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TRS"
+          },
+          {
+            "name": "@TRS09"
+          }
+        ]
+      }
+    ],
+    "name": "Transaction",
+    "description": "",
+    "id": "transaction",
+    "keyword": "Feature",
+    "uri": "Include/features/05. Transaction.feature",
+    "tags": [
+      {
+        "name": "@TRS",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13001394125,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Successfully logged out",
+        "description": "",
+        "id": "sidebar;successfully-logged-out",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 599063375,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click Menu sidebar",
+            "match": {
+              "location": "mainStep.clickMenuSidebar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1117131500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click \"Logout\" submenu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Logout\"",
+                  "offset": 6
+                }
+              ],
+              "location": "mainStep.clickSidebarSubmenu(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1391000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User \"successfully logged out and will be directed back to the login page\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"successfully logged out and will be directed back to the login page\u003e\"",
+                  "offset": 5
+                }
+              ],
+              "location": "mainStep.validateActionSubmenu(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SDB"
+          },
+          {
+            "name": "@LGT01"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11840402750,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Successfully navigated to the companys About",
+        "description": "",
+        "id": "sidebar;successfully-navigated-to-the-companys-about",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 548073708,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Click Menu sidebar",
+            "match": {
+              "location": "mainStep.clickMenuSidebar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50104570208,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Click \"About\" submenu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"About\"",
+                  "offset": 6
+                }
+              ],
+              "location": "mainStep.clickSidebarSubmenu(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26411828125,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User \"will be directed to the company information page\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"will be directed to the company information page\"",
+                  "offset": 5
+                }
+              ],
+              "location": "mainStep.validateActionSubmenu(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SDB"
+          },
+          {
+            "name": "@ABT01"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 17177548125,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Ensure that the Reset app state button can reset all products that are already in the shopping cart",
+        "description": "",
+        "id": "sidebar;ensure-that-the-reset-app-state-button-can-reset-all-products-that-are-already-in-the-shopping-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4013577500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Click Add To Cart button for \"all\" product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"all\"",
+                  "offset": 29
+                }
+              ],
+              "location": "cartStep.clickAddToCartButtonWithCounts(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 844587333,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Click Menu sidebar",
+            "match": {
+              "location": "mainStep.clickMenuSidebar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1445599583,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Click \"Reset App State\" submenu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Reset App State\"",
+                  "offset": 6
+                }
+              ],
+              "location": "mainStep.clickSidebarSubmenu(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 686324167,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Click Close button",
+            "match": {
+              "location": "mainStep.clickCloseButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1586911000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Click Cart button",
+            "match": {
+              "location": "cartStep.clickCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "com.kms.katalon.core.exception.StepFailedException: Unable to verify object \u0027Object Repository/03. CRT-Cart/CRT_button_Add To cart General\u0027 is present\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1464)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$3.call(Unknown Source)\n\tat pages.cartPage.validationAddToCartIsDisplayed(cartPage.groovy:87)\n\tat pages.cartPage$validationAddToCartIsDisplayed$9.call(Unknown Source)\n\tat stepdefs.cartStep.validateCartIsEmpty(cartStep.groovy:34)\n\tat ✽.All product will be removed from the cart(Include/features/06. Sidebar.feature:26)\nCaused by: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: \u0027Object Repository/03. CRT-Cart/CRT_button_Add To cart General\u0027 located by \u0027//*[contains(text(), \u0027Add to cart\u0027)]\u0027 not found\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1464)\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$3.call(Unknown Source)\n\tat pages.cartPage.validationAddToCartIsDisplayed(cartPage.groovy:87)\n\tat pages.cartPage$validationAddToCartIsDisplayed$9.call(Unknown Source)\n\tat stepdefs.cartStep.validateCartIsEmpty(cartStep.groovy:34)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)\n\tat cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:70)\n\tat cucumber.runner.TestStep.run(TestStep.java:52)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)\n\tat cucumber.runner.TestCase.run(TestCase.java:47)\n\tat cucumber.runner.Runner.runPickle(Runner.java:44)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:98)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:107)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:105)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runWithCucumberRunner_closure5.doCall(CucumberBuiltinKeywords.groovy:621)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runWithCucumberRunner_closure5.doCall(CucumberBuiltinKeywords.groovy)\n\tat com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)\n\tat com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)\n\tat com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runWithCucumberRunner(CucumberBuiltinKeywords.groovy:618)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runWithCucumberRunner$0.callStatic(Unknown Source)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runWithCucumberRunner(CucumberBuiltinKeywords.groovy:718)\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runWithCucumberRunner.call(Unknown Source)\n\tat runnerExtent.run(runnerExtent:21)\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)\n\tat com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:144)\n\tat com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:135)\n\tat com.kms.katalon.core.main.TestCaseMain$runTestCase$0.call(Unknown Source)\n\tat TempTestCase1704111900706.run(TempTestCase1704111900706.groovy:25)\n",
+              "duration": 11723953666,
+              "status": "failed"
+            },
+            "line": 26,
+            "name": "All product will be removed from the cart",
+            "match": {
+              "location": "cartStep.validateCartIsEmpty()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SDB"
+          },
+          {
+            "name": "@RST01"
+          }
+        ]
+      }
+    ],
+    "name": "Sidebar",
+    "description": "",
+    "id": "sidebar",
+    "keyword": "Feature",
+    "uri": "Include/features/06. Sidebar.feature",
+    "tags": [
+      {
+        "name": "@SDB",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 15,
+        "name": "Successfully apply various filter to sort the products",
+        "description": "",
+        "id": "filter-application;successfully-apply-various-filter-to-sort-the-products;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11654527500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 646308541,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Select Filter \"Name A to Z\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Name A to Z\"",
+                  "offset": 14
+                }
+              ],
+              "location": "mainStep.selectFilter(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 410058583,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The products will be shown based on user filter choices \"Name A to Z\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Name A to Z\"",
+                  "offset": 56
+                }
+              ],
+              "location": "mainStep.validateProductAppear(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FLT"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Successfully apply various filter to sort the products",
+        "description": "",
+        "id": "filter-application;successfully-apply-various-filter-to-sort-the-products;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11931100500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1170828542,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Select Filter \"Name Z to A\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Name Z to A\"",
+                  "offset": 14
+                }
+              ],
+              "location": "mainStep.selectFilter(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 496858292,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The products will be shown based on user filter choices \"Name Z to A\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Name Z to A\"",
+                  "offset": 56
+                }
+              ],
+              "location": "mainStep.validateProductAppear(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FLT"
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Successfully apply various filter to sort the products",
+        "description": "",
+        "id": "filter-application;successfully-apply-various-filter-to-sort-the-products;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11870208583,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 962617208,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Select Filter \"Price (low to high)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Price (low to high)\"",
+                  "offset": 14
+                }
+              ],
+              "location": "mainStep.selectFilter(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 549041042,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The products will be shown based on user filter choices \"Price (low to high)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Price (low to high)\"",
+                  "offset": 56
+                }
+              ],
+              "location": "mainStep.validateProductAppear(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FLT"
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Successfully apply various filter to sort the products",
+        "description": "",
+        "id": "filter-application;successfully-apply-various-filter-to-sort-the-products;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11642757708,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1080765917,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Select Filter \"Price (high to low)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Price (high to low)\"",
+                  "offset": 14
+                }
+              ],
+              "location": "mainStep.selectFilter(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 504753041,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The products will be shown based on user filter choices \"Price (high to low)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Price (high to low)\"",
+                  "offset": 56
+                }
+              ],
+              "location": "mainStep.validateProductAppear(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FLT"
+          }
+        ]
+      }
+    ],
+    "name": "Filter Application",
+    "description": "",
+    "id": "filter-application",
+    "keyword": "Feature",
+    "uri": "Include/features/07. Filter.feature",
+    "tags": [
+      {
+        "name": "@FLT",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13175555792,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Successfully redirected to the company\u0027s account",
+        "description": "",
+        "id": "footer;successfully-redirected-to-the-company-s-account;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 538235667,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click \"Twitter\" on footer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Twitter\"",
+                  "offset": 6
+                }
+              ],
+              "location": "mainStep.clickFooterButton(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53562798875,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User will be directed to the \"Twitter\" account",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Twitter\"",
+                  "offset": 29
+                }
+              ],
+              "location": "mainStep.validateFooterNavigates(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FT0"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12061081000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Successfully redirected to the company\u0027s account",
+        "description": "",
+        "id": "footer;successfully-redirected-to-the-company-s-account;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 605912833,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click \"Facebook\" on footer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Facebook\"",
+                  "offset": 6
+                }
+              ],
+              "location": "mainStep.clickFooterButton(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37634996459,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User will be directed to the \"Facebook\" account",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Facebook\"",
+                  "offset": 29
+                }
+              ],
+              "location": "mainStep.validateFooterNavigates(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FT0"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12690785333,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User already login",
+            "match": {
+              "location": "loginStep.userAlreadyLogin()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Successfully redirected to the company\u0027s account",
+        "description": "",
+        "id": "footer;successfully-redirected-to-the-company-s-account;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 479767333,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click \"Linkedin\" on footer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Linkedin\"",
+                  "offset": 6
+                }
+              ],
+              "location": "mainStep.clickFooterButton(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14387764083,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User will be directed to the \"Linkedin\" account",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Linkedin\"",
+                  "offset": 29
+                }
+              ],
+              "location": "mainStep.validateFooterNavigates(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FT0"
+          }
+        ]
+      }
+    ],
+    "name": "Footer",
+    "description": "",
+    "id": "footer",
+    "keyword": "Feature",
+    "uri": "Include/features/08. Footer.feature",
+    "tags": [
+      {
+        "name": "@FT0",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

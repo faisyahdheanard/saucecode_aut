@@ -12,66 +12,59 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>c704fce6-4514-43bd-b07d-6b10d17f3376</testSuiteGuid>
    <testCaseLink>
-      <guid>9a8f7db9-08bc-41f7-b316-f63e3ecff1af</guid>
+      <guid>2a3d3be3-9072-4909-b337-a74a54906663</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/runnerLogin</testCaseId>
+      <testCaseId>Test Cases/defaultRunner/runnerLogin</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8a3490e9-50be-45c6-86b9-fc78674f4dbe</guid>
+      <guid>cf8d51f8-bb2e-41de-ba55-25848f8b964a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/runnerCart</testCaseId>
+      <testCaseId>Test Cases/defaultRunner/runnerCart</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8ff48ee6-675d-4caa-a2c7-9a94eb0c5df9</guid>
+      <guid>0fa56923-8c00-4e62-bfca-4aead0983551</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/runnerSidebar</testCaseId>
+      <testCaseId>Test Cases/defaultRunner/runnerMain</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>fcb65266-5265-4b84-aaea-702f14149c59</guid>
+      <guid>4a95e72d-1f4c-4094-b667-cff7993f4081</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/runnerFooter</testCaseId>
+      <testCaseId>Test Cases/defaultRunner/runnerDetailProduct</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>149bbfc1-ab32-4246-af35-30ecc2bfe360</guid>
+      <guid>75bf339b-3d9b-4acb-9415-66a12ab39227</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/runnerFilter</testCaseId>
+      <testCaseId>Test Cases/defaultRunner/runnerSidebar</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>98ae03c3-2a48-4d0c-80e9-b453776c6122</guid>
+      <guid>deceaaeb-e3cf-4f5a-b7f8-ae093f859c45</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/runnerDetailProduct</testCaseId>
+      <testCaseId>Test Cases/defaultRunner/runnerFilter</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>859fef1b-935d-4e5e-9e83-a6decb08ad57</guid>
+      <guid>0542bbb2-67b7-40c3-9514-2cd88a9f88f8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/runnerMain</testCaseId>
+      <testCaseId>Test Cases/defaultRunner/runnerFooter</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3a22185b-ac27-42a9-a638-3dca2d270c8e</guid>
+      <guid>d30844bd-116c-4369-8de4-010a86c9be67</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/runnerTransaction</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5a78c726-6e5d-4c39-b87e-84281665a665</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/runnerTransaction2</testCaseId>
+      <testCaseId>Test Cases/defaultRunner/runnerTransaction</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

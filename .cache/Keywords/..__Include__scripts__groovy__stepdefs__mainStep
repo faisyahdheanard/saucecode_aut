@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "B79FCC241C880200481FBBA9CFA423B5",
+  "keywordClasses": [
+    {
+      "name": "stepdefs.mainStep",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

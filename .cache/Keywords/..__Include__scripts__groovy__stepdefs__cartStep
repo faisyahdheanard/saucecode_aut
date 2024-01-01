@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "AF98824247F963A74B206CF22D7479ED",
+  "keywordClasses": [
+    {
+      "name": "stepdefs.cartStep",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

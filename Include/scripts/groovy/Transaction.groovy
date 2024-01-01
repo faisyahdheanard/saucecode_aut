@@ -45,74 +45,74 @@ import Utils.*
 
 
 class Transaction {
-	@And("Click Checkout button")
-	public void clickCheckoutButton() {
-		WebUI.click(findTestObject('Object Repository/05. TRS-Transaction/TRS_button_Checkout'))
-	}
-
-	@Then("The Checkout page will be displayed")
-	public void validateCheckoutPageDisplayed() {
-		WebUI.click(findTestObject('Object Repository/05. TRS-Transaction/TRS_text_Your Information Checkout'))
-	}
-
-	@And("Input First Name, Last Name, Postal Code fields with valid data")
-	public void transactionValidData() {
-		Map<String, String> data = Utils.getUserInfo(1);
-
-		WebUI.setText(findTestObject('Object Repository/05. TRS-Transaction/TRS_field_First name'), data.get("first name"))
-		WebUI.setText(findTestObject('Object Repository/05. TRS-Transaction/TRS_field_Last name'), data.get("last name"))
-		WebUI.setText(findTestObject('Object Repository/05. TRS-Transaction/TRS_field_Postal code'), data.get("postal code"))
-	}
-
-	@And("Click Continue button")
-	public void clickContinueButton() {
-		WebUI.click(findTestObject('Object Repository/05. TRS-Transaction/TRS_button_Continue'))
-	}
-
-	@And("Click Finish button")
-	public void clickFinishButton() {
-		WebUI.click(findTestObject('Object Repository/05. TRS-Transaction/TRS_button_Finish'))
-	}
-
-	@Then("The Checkout overview page is displayed")
-	public void checkoutOverviewPageDisplayed() {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/05. TRS-Transaction/TRS_text_Chekout overview'), 2)
-	}
-
-	@And("The transaction is successful and there is a message said {string}")
-	public void validatePaymentSuccessful(String message) {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/05. TRS-Transaction/TRS_text_Transaction success'), 2)
-		WebUI.verifyElementText(findTestObject('Object Repository/05. TRS-Transaction/TRS_text_Transaction success'), message, FailureHandling.STOP_ON_FAILURE)
-	}
-
-	@Then("There is a message said {string}")
-	public void errorMessageDisplayed(String message) {
-		WebUI.verifyElementText(findTestObject('Object Repository/05. TRS-Transaction/TRS_text_alert Transaction'), message, FailureHandling.STOP_ON_FAILURE)
-	}
-
-	@And("Click Cancel button")
-	public void clickCancelButton() {
-		WebUI.click(findTestObject('Object Repository/05. TRS-Transaction/TRS_button_Cancel'))
-	}
-
-	@And("Input First name, Last name, and Postal code with {string}")
-	public void transactionInvalidData(String dataName) {
-		int row = 0;
-
-		if(dataName.equals("blank data")) {
-			row = 2
-		} else if(dataName.equals("empty first name")) {
-			row = 3
-		} else if(dataName.equals("empty last name")) {
-			row = 4
-		} else if(dataName.equals("empty postal code")) {
-			row = 5
-		}
-
-		Map<String, String> data = Utils.getUserInfo(row);
-
-		WebUI.setText(findTestObject('Object Repository/05. TRS-Transaction/TRS_field_First name'), data.get("first name"))
-		WebUI.setText(findTestObject('Object Repository/05. TRS-Transaction/TRS_field_Last name'), data.get("last name"))
-		WebUI.setText(findTestObject('Object Repository/05. TRS-Transaction/TRS_field_Postal code'), data.get("postal code"))
-	}
+//	@And("Click Checkout button")
+//	public void clickCheckoutButton() {
+//		WebUI.click(findTestObject('Object Repository/05. TRS-Transaction/TRS_button_Checkout'))
+//	}
+//
+//	@Then("The Checkout page will be displayed")
+//	public void validateCheckoutPageDisplayed() {
+//		WebUI.click(findTestObject('Object Repository/05. TRS-Transaction/TRS_text_Your Information Checkout'))
+//	}
+//
+//	@And("Input First Name, Last Name, Postal Code fields with valid data")
+//	public void transactionValidData() {
+//		Map<String, String> data = Utils.getUserInfo(1);
+//
+//		WebUI.setText(findTestObject('Object Repository/05. TRS-Transaction/TRS_field_First name'), data.get("first name"))
+//		WebUI.setText(findTestObject('Object Repository/05. TRS-Transaction/TRS_field_Last name'), data.get("last name"))
+//		WebUI.setText(findTestObject('Object Repository/05. TRS-Transaction/TRS_field_Postal code'), data.get("postal code"))
+//	}
+//
+//	@And("Click Continue button")
+//	public void clickContinueButton() {
+//		WebUI.click(findTestObject('Object Repository/05. TRS-Transaction/TRS_button_Continue'))
+//	}
+//
+//	@And("Click Finish button")
+//	public void clickFinishButton() {
+//		WebUI.click(findTestObject('Object Repository/05. TRS-Transaction/TRS_button_Finish'))
+//	}
+//
+//	@Then("The Checkout overview page is displayed")
+//	public void checkoutOverviewPageDisplayed() {
+//		WebUI.verifyElementPresent(findTestObject('Object Repository/05. TRS-Transaction/TRS_text_Chekout overview'), 2)
+//	}
+//
+//	@And("The transaction is successful and there is a message said {string}")
+//	public void validatePaymentSuccessful(String message) {
+//		WebUI.verifyElementPresent(findTestObject('Object Repository/05. TRS-Transaction/TRS_text_Transaction success'), 2)
+//		WebUI.verifyElementText(findTestObject('Object Repository/05. TRS-Transaction/TRS_text_Transaction success'), message, FailureHandling.STOP_ON_FAILURE)
+//	}
+//
+//	@Then("There is a message said {string}")
+//	public void errorMessageDisplayed(String message) {
+//		WebUI.verifyElementText(findTestObject('Object Repository/05. TRS-Transaction/TRS_text_alert Transaction'), message, FailureHandling.STOP_ON_FAILURE)
+//	}
+//
+//	@And("Click Cancel button")
+//	public void clickCancelButton() {
+//		WebUI.click(findTestObject('Object Repository/05. TRS-Transaction/TRS_button_Cancel'))
+//	}
+//
+//	@And("Input First name, Last name, and Postal code with {string}")
+//	public void transactionInvalidData(String dataName) {
+//		int row = 0;
+//
+//		if(dataName.equals("blank data")) {
+//			row = 2
+//		} else if(dataName.equals("empty first name")) {
+//			row = 3
+//		} else if(dataName.equals("empty last name")) {
+//			row = 4
+//		} else if(dataName.equals("empty postal code")) {
+//			row = 5
+//		}
+//
+//		Map<String, String> data = Utils.getUserInfo(row);
+//
+//		WebUI.setText(findTestObject('Object Repository/05. TRS-Transaction/TRS_field_First name'), data.get("first name"))
+//		WebUI.setText(findTestObject('Object Repository/05. TRS-Transaction/TRS_field_Last name'), data.get("last name"))
+//		WebUI.setText(findTestObject('Object Repository/05. TRS-Transaction/TRS_field_Postal code'), data.get("postal code"))
+//	}
 }

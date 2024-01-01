@@ -15,10 +15,10 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id=&quot;page_wrapper&quot;]/div/div[2]/div/form/div[1]/div[4]/h3</value>
+         <value>[class=&quot;error-message-container error&quot;]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -26,6 +26,6 @@
       <name>class</name>
       <type>Main</type>
       <value>error-message-container error</value>
-      <webElementGuid>d8beefac-da8d-42fb-bdf7-014385d93a55</webElementGuid>
+      <webElementGuid>51b86b2d-9abc-4c05-8f58-f7bd89abff02</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

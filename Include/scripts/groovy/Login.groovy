@@ -28,64 +28,64 @@ import internal.GlobalVariable
 public class Login {
 
 
-	@Given("Navigate to the website")
-	public void navigateToTheWebsite() {
-
-		WebUI.openBrowser('')
-		WebUI.navigateToUrl(GlobalVariable.baseUrl)
-	}
-
-	@When("Input Username and Password fields with valid data")
-	public void inputWithValidData() {
-		Map<String, String> data = Utils.getUserData(1);
-
-		WebUI.setText(findTestObject('Object Repository/01. LOG-Login/LOG_textbox_Username'), data.get("username"));
-		WebUI.setText(findTestObject('Object Repository/01. LOG-Login/LOG_textbox_Password'), data.get("password"));
-	}
-
-	@And("Click Login button")
-	public void clickLoginButton() {
-
-		WebUI.click(findTestObject('01. LOG-Login/LOG_button_Login'))
-	}
-
-	@When("Input Username and Password fields with {string}")
-	public void inputWithInvalidData(String dataName) {
-		int row = 0;
-
-		if(dataName.equals("empty username")) {
-			row = 2
-		} else if(dataName.equals("empty password")) {
-			row = 3
-		} else if(dataName.equals("empty data")) {
-			row = 4
-		} else if(dataName.equals("invalid data")) {
-			row = 5
-		} else if(dataName.equals("invalid username")) {
-			row = 6
-		} else if(dataName.equals("invalid password")) {
-			row = 7
-		} else if(dataName.equals("valid with space")) {
-			row = 8
-		}
-		Map<String, String> data = Utils.getUserData(row);
-
-		WebUI.setText(findTestObject('Object Repository/01. LOG-Login/LOG_textbox_Username'), data.get("username"));
-		WebUI.setText(findTestObject('Object Repository/01. LOG-Login/LOG_textbox_Password'), data.get("password"));
-	}
-
-	@Then("There is an alert said {string}")
-	public void messagePopUp(String message) {
-		try {
-			WebUI.verifyElementPresent(findTestObject('Object Repository/01. LOG-Login/LOG_alert'), 2)
-			WebUI.verifyElementText(findTestObject('Object Repository/01. LOG-Login/LOG_alert'), message)
-		} catch (Exception e) {
-			System.out.println("Error Message doesnt show!");
-		}
-	}
-
-	@Given("User already login")
-	public void userAlreadyLogin() {
-		CucumberKW.runFeatureFileWithTags('Include/features', ((['@LOG01'])) as String[])
-	}
+	//	@Given("Navigate to the website")
+	//	public void navigateToTheWebsite() {
+	//
+	//		WebUI.openBrowser('')
+	//		WebUI.navigateToUrl(GlobalVariable.baseUrl)
+	//	}
+	//
+	//	@When("Input Username and Password fields with valid data")
+	//	public void inputWithValidData() {
+	//		Map<String, String> data = Utils.getUserData(1);
+	//
+	//		WebUI.setText(findTestObject('Object Repository/01. LOG-Login/LOG_textbox_Username'), data.get("username"));
+	//		WebUI.setText(findTestObject('Object Repository/01. LOG-Login/LOG_textbox_Password'), data.get("password"));
+	//	}
+	//
+	//	@And("Click Login button")
+	//	public void clickLoginButton() {
+	//
+	//		WebUI.click(findTestObject('01. LOG-Login/LOG_button_Login'))
+	//	}
+	//
+	//	@When("Input Username and Password fields with {string}")
+	//	public void inputWithInvalidData(String dataName) {
+	//		int row = 0;
+	//
+	//		if(dataName.equals("empty username")) {
+	//			row = 2
+	//		} else if(dataName.equals("empty password")) {
+	//			row = 3
+	//		} else if(dataName.equals("empty data")) {
+	//			row = 4
+	//		} else if(dataName.equals("invalid data")) {
+	//			row = 5
+	//		} else if(dataName.equals("invalid username")) {
+	//			row = 6
+	//		} else if(dataName.equals("invalid password")) {
+	//			row = 7
+	//		} else if(dataName.equals("valid with space")) {
+	//			row = 8
+	//		}
+	//		Map<String, String> data = Utils.getUserData(row);
+	//
+	//		WebUI.setText(findTestObject('Object Repository/01. LOG-Login/LOG_textbox_Username'), data.get("username"));
+	//		WebUI.setText(findTestObject('Object Repository/01. LOG-Login/LOG_textbox_Password'), data.get("password"));
+	//	}
+	//
+	//	@Then("There is an alert said {string}")
+	//	public void messagePopUp(String message) {
+	//		try {
+	//			WebUI.verifyElementPresent(findTestObject('Object Repository/01. LOG-Login/LOG_alert'), 2)
+	//			WebUI.verifyElementText(findTestObject('Object Repository/01. LOG-Login/LOG_alert'), message)
+	//		} catch (Exception e) {
+	//			System.out.println("Error Message doesnt show!");
+	//		}
+	//	}
+	//
+	//	@Given("User already login")
+	//	public void userAlreadyLogin() {
+	//		CucumberKW.runFeatureFileWithTags('Include/features', ((['@LOG01'])) as String[])
+	//	}
 }
